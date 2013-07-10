@@ -7,3 +7,5 @@ sudo apt-get install php5
 sudo apt-get install libapache2-mod-php5
 
 sudo /etc/init.d/apache2 restart
+
+exit 

@@ -17,7 +17,7 @@ sudo apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagic
 
 sudo /etc/init.d/apache2 restart
 
-chmod 755 /var/www
+sudo chmod 777 /var/www/
 
 sudo echo "<?php
 phpinfo();

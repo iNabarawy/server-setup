@@ -30,4 +30,5 @@ if [ -e /usr/share/phpmyadmin/index.php ]; then
 sudo mv /usr/share/phpmyadmin /var/www/phpmyadmin
 sudo service apache2 restart
 fi
+sudo apt-get update
 exit 0 

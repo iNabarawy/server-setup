@@ -18,7 +18,11 @@ sudo apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagic
 
 sudo /etc/init.d/apache2 restart
 
-echo "<?php\nphpinfo();\n?>" > /var/www/info.php 
+chmod 755 /var/www
+
+sudo echo "<?php\nphpinfo();\n?>" > /var/www/info.php 
+
+sudo apt-get install postfix
 
 sudo apt-get install phpmyadmin
 

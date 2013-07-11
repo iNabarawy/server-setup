@@ -3,7 +3,6 @@ cd $HOME
 
 sudo apt-get install mysql-server mysql-client
 
-
 sudo apt-get install apache2
 
 sudo apt-get install php5
@@ -20,11 +19,15 @@ sudo /etc/init.d/apache2 restart
 
 chmod 755 /var/www
 
-sudo echo "<?php\nphpinfo();\n?>" > /var/www/info.php 
+sudo echo "<?php
+phpinfo();
+?>" > /var/www/info.php 
 
 sudo apt-get install postfix
-
 sudo apt-get install phpmyadmin
 
-
-exit 
+if [ -e /usr/share/phpmyadmin/index.php ]; then
+sudo mv /usr/share/phpmyadmin /var/www/phpmyadmin
+sudo service apache2 restart
+fi
+exit 0 

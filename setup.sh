@@ -17,7 +17,7 @@ sudo apt-get install -y php5-mysql php5-curl php5-gd php5-intl php-pear php5-ima
 
 sudo /etc/init.d/apache2 restart
 
-chmod 755 /var/www
+sudo chmod 777 /var/www/
 
 sudo echo "<?php
 echo ("Welcome World ! This is an automated setup via iNabarawy quick server setup via https://github.com/iNabarawy/server-setup.git");
@@ -32,4 +32,5 @@ if [ -e /usr/share/phpmyadmin/index.php ]; then
 sudo mv /usr/share/phpmyadmin /var/www/phpmyadmin
 sudo service apache2 restart
 fi
+sudo apt-get update
 exit 0 

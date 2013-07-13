@@ -20,7 +20,7 @@ sudo /etc/init.d/apache2 restart
 sudo chmod 777 /var/www/
 
 sudo echo "<?php
-echo ("Welcome World ! This is an automated setup via iNabarawy quick server setup via https://github.com/iNabarawy/server-setup.git");
+echo (\"Welcome World ! This is an automated setup via iNabarawy quick server setup via https://github.com/iNabarawy/server-setup.git\");
 ?>" > /var/www/index.php 
 if [ -e /var/www/index.html ]; then 
 rm -rf /var/www/index.html

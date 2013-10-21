@@ -30,6 +30,7 @@ sudo apt-get -y install phpmyadmin
 
 if [ -e /usr/share/phpmyadmin/index.php ]; then
 sudo mv /usr/share/phpmyadmin /var/www/phpmyadmin
+sudo a2dismod autoindex
 sudo service apache2 restart
 fi
 sudo apt-get update
